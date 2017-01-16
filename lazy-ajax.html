@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`lazy-ajax`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="lazy-ajax">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'lazy-ajax',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'lazy-ajax',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
